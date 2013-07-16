@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Personal Homepage of Manuel Baumann</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="starter-template-Dateien/bootstrap.css" rel="stylesheet">
+    <link href="starter-template-Dateien/sidebar.css" rel="stylesheet">
+    <link href="starter-template-Dateien/bootstrap-responsive.css" rel="stylesheet">
+	
+    <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+	<script type="text/javascript">
+	LatexIT.add('p',true);
+	</script>
+    
+	<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" src="js/jquery.tweet.js" type="text/javascript"></script> 
+    <script type='text/javascript'>
+      jQuery(function($){
+        $(".tweet").tweet({
+          username: "TeXtip",
+          join_text: "auto",
+          avatar_size: 32,
+          count: 5,
+          auto_join_text_default: " ",
+          auto_join_text_ed: " ",
+          auto_join_text_ing: " ",
+          auto_join_text_reply: " ",
+          auto_join_text_url: " ",
+          loading_text: "loading tweets..."
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        var saraj = document.getElementById('sarajevo').clientHeight; 
+        //console.log(saraj)
+        $("#theFixed").css("top",Math.max(0,saraj-$(this).scrollTop()));
+      });
+    </script>
+    <script type="text/javascript">
+      $(window).ready(function() {
+        window.scrollBy(0,1); 
+        window.scrollBy(0,-1); 
+      });
+		</script>
+		<script>  
+			$(function ()  
+			{ $("#popbib1").popover();  
+			});  
+		</script> 
+		<script>  
+			$(function ()  
+			{ $("#popbib2").popover();  
+			});  
+		</script> 
+    <link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/> 
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/> 
+  </head>
+
+  <body data-spy="scroll" data-target="#sidenav" onLoad="window.scroll(0, 150)">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <span class="brand">Manuel Baumann</span>
+          <div style="height: 0px;" class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="student.html">Studies</a></li>
+              <li class="active"><a href="phd.html">PhD project</a></li>
+              <li><a href="things.html">Misc</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+			<div class="span12 hidden-phone">
+        <img id="sarajevo" src="img/background1.jpg" width=100% border="0">
+      </div> 
+
+
+      <!-- Docs nav
+      ================================================== -->
+      <div class="row-fluid">
+        <div id="sidenav" class="span2 bs-docs-sidebar hidden-tablet hidden-phone">
+          <ul id="theFixed" style="position: fixed;" class="nav nav-list bs-docs-sidenav">
+            <li class="active"><a href="#PhD Project"><i class="icon-chevron-right"></i>PhD Project</a></li>
+            <li><a href="#References"><i class="icon-chevron-right"></i>References</a></li>
+            <li><a href="#OwnPub"><i class="icon-chevron-right"></i>Own publications</a></li>
+          </ul>
+        </div>
+				<div class="span7">
+					<section id="PhD Project">
+					<h2>Fast iterative solution of the time-harmonic elastic wave equation at multiple frequencies</h2>
+					<h5>University Supervisor: Dr. ir. M.B. Van Gijzen</h5> 
+					<h5>SHELL Monitor: Dr. Ren&eacute;-&Eacute;douard Plessix</h5> 
+					
+					<p align="justify">Fast and accurate simulation of wave propagation through an elastic medium is a key component in geophysical exploration. By assuming a time-harmonic wave field and after discretizing the governing equation, the wave can be computed by solving a large complex and indefinite system of linear equations. This time-harmonic elastic wave equation has the same structure as the Helmholtz equation for acoustic wave propagation in the sense that both can be written as $(K + if C -f^2 M)\mathbf{x} = \mathbf{b}$. Here $f$ is the (angular) frequency, $i$ is the imaginary unit number, $K$, $C$ and $M$ are symmetric and positive definite matrices and the right-hand side vector $\mathbf{b}$ corresponds to a source term. Such systems typically have to be solved at several frequencies and for dozens of right-hand side vectors $\mathbf{b}$. The grid size must be small enough to describe a wave, which results in very large systems for high frequencies (many millions of linear equations) that are hard to solve due to the indefiniteness of the system matrix. The time-harmonic elastic wave equation is even more difficult to solve than the Helmholtz equation since the number of unknowns per grid points is three instead of one, resulting in an even larger system, with a system matric that is more dense (more non-zeros per row) and more ill-conditioned. My project aims to develop an efficient iterative mehtod for solving the time-harmonic elastic wave equation at multiple frequencies and for multiple source terms. In order to develop this method, algorithms that have been successfully applied for the Helmholtz equation will be generalized for the time-harmonic elastic wave equation. We aim for (nearly) frequency and grid independent convergence so that the solver can be successfully applied to problems at the relevant frequencies for geophysical applications.</p>
+					
+					</section>
+
+					<section id="References">
+					<h3>References</h3>
+					[1] Martin B. van Gijzen, Gerard L.G. Sleijpen and Jens-Peter M. Zemke. <a href = "http://www.ewi.tudelft.nl/fileadmin/Faculteit/EWI/Over_de_faculteit/Afdelingen/Applied_Mathematics/Rapporten/2011/Martin_rapport_11-06.pdf"> Flexible and multi-shift induced dimension reduction algorithms for solving large sparse linear systems.</a> Delft University of Technology, Reports of the Department of Apllied Mathematical Analysis, Report 11-06, 2011. <br>
+					[2] Y.A. Erlangga. <a href = "http://ta.twi.tudelft.nl/nw/users/vuik/numanal/erlangga.pdf"> A robust and effcient iterative method for the numerical solution of the Helmholtz equation.</a> PhD thesis, Delft University of Technology, 2005.<br>
+					[3] Y.A. Erlangga and R. Nabben <a href = "http://slim.eos.ubc.ca/Publications/Public/Journals/erlangga08oam.pdf"> On a multilevel Krylov method for the Helmholtz equation preconditioned by shifted Laplacian.</a> ETNA, Vol. 31, 403-424, 2008.<br>
+					[4] T.B. Jonsthovel, M.B. van Gijzen, C. Vuik, C. Kasbergen and A. Scarpas. <i>Preconditioned conjugate gradient method enhanced by deflation of rigid body modes applied to composite materials.</i> Computer Modeling in Engineering and Science, Vol. 47, pp. 97-118, 2009.<br>
+					</section>
+
+					<section id="OwnPub">
+					<h3>Own publications</h3>
+					Coming soon...
+					<h3>Selected Talks</h3>
+					Coming soon...
+					</section> 
+				</div> 
+
+				<div class="span3 hidden-tablet hidden-phone">
+<a class="twitter-timeline"  href="https://twitter.com/TeXtip"  data-widget-id="353116923103436800">Tweets von @TeXtip</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+					
+					<!--<h2>Daily Tips</h2>
+					<div class="tweet-outer">
+						<h4>for working with <a href="http://www.latex-project.org/">LaTeX</a></h4>
+						<div class="tweet"></div>-->
+					</div>
+				</div> 
+			</div> 
+		</div>
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="starter-template-Dateien/bootstrap-transition.js"></script>
+        <script src="starter-template-Dateien/bootstrap-alert.js"></script>
+        <script src="starter-template-Dateien/bootstrap-modal.js"></script>
+        <script src="starter-template-Dateien/bootstrap-dropdown.js"></script>
+        <script src="starter-template-Dateien/bootstrap-scrollspy.js"></script>
+        <script src="starter-template-Dateien/bootstrap-tab.js"></script>
+        <script src="starter-template-Dateien/bootstrap-tooltip.js"></script>
+        <script src="starter-template-Dateien/bootstrap-popover.js"></script>
+        <script src="starter-template-Dateien/bootstrap-button.js"></script>
+        <script src="starter-template-Dateien/bootstrap-collapse.js"></script>
+        <script src="starter-template-Dateien/bootstrap-carousel.js"></script>
+        <script src="starter-template-Dateien/bootstrap-typeahead.js"></script>
+
+        </body></html>

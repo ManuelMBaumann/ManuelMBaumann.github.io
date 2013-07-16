@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Personal Homepage of Manuel Baumann</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="starter-template-Dateien/bootstrap.css" rel="stylesheet">
+    <link href="starter-template-Dateien/sidebar.css" rel="stylesheet">
+    <link href="starter-template-Dateien/bootstrap-responsive.css" rel="stylesheet">
+
+    <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script language="javascript" src="js/jquery.tweet.js" type="text/javascript"></script> 
+    <script type='text/javascript'>
+      jQuery(function($){
+        $(".tweet").tweet({
+          username: "FESonline",
+          join_text: "auto",
+          avatar_size: 32,
+          count: 5,
+          auto_join_text_default: " ",
+          auto_join_text_ed: " ",
+          auto_join_text_ing: " ",
+          auto_join_text_reply: " ",
+          auto_join_text_url: " ",
+          loading_text: "loading tweets..."
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      $(window).scroll(function(){
+        var saraj = document.getElementById('schottland').clientHeight; 
+        //console.log(saraj)
+        $("#theFixed").css("top",Math.max(0,saraj-$(this).scrollTop()));
+      });
+    </script>
+    <script type="text/javascript">
+      $(window).ready(function() {
+        window.scrollBy(0,1); 
+        window.scrollBy(0,-1); 
+      });
+    </script>
+    <link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/> 
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/> 
+  </head>
+
+  <body data-spy="scroll" data-target="#sidenav" onLoad="window.scroll(0, 150)">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <span class="brand">Manuel Baumann</span>
+          <div style="height: 0px;" class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="student.html">Studies</a></li>
+              <li><a href="phd.html">PhD project</a></li>
+              <li class="active"><a href="things.html">Misc</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+			<div class="span12 hidden-phone">
+        <img id="schottland" src="img/background1.jpg" width=100% border="0" >
+      </div> 
+
+
+      <!-- Docs nav
+      ================================================== -->
+      <div class="row-fluid">
+        <div id="sidenav" class="span2 bs-docs-sidebar hidden-tablet hidden-phone">
+          <ul id="theFixed" style="position: fixed;" class="nav nav-list bs-docs-sidenav">
+            <li class="active"><a href="#links"><i class="icon-chevron-right"></i>Links and Likes</a></li>
+            <li><a href="#ski"><i class="icon-chevron-right"></i>Skiing</a></li>
+            <li><a href="#declaration"><i class="icon-chevron-right"></i>Declaration</a></li>
+          </ul>
+        </div>
+				<div class="span7">
+					<section id="links">
+					<h2>Links and Likes</h2>
+					<p> During the past years, the following institutions supported my professional career and those are a few links I would like to share: </p>
+						<ul>
+							<li><a href="http://ec.europa.eu/education/external-relation-programmes/mundus_en.htm">Erasmus Mundus</a> - This is a great opportunity for Master and PhD studies providing good scholarships by the European union. For my Masters, I studied the Erasmus Mundus program <a href="http://www.kth.se/en/studies/programmes/master/em/cosse">COSSE</a> at KTH Stockholm and TU Delft. </li>
+							<li><a href="http://www.fes.de/studienfoerderung/stipendienprogramme">FES</a> - The Friedrich-Ebert foundation (FES) mainly supports students from a so-called working class background with a scholarship equivalent to the BAfoeG. The FES is also very active in peace and development politics in <a href="http://www.fes.de/international/s_fes_i.htm">many contries</a>. </li>
+							<li><a href="http://www3.math.tu-berlin.de/dies/2011/index.html">Dies Mathematicus</a> - The Dies Mathematicus is an annual meeting for all students of TU Berlin that graduated in mathematics, technical mathematics or scientific computing in the last year. In 2011, I managed to win the prize for the Best Bachelor Degree in pure mathematics. (<a href = "img/IMG_4058.jpg">Pic1</a>, <a href = "img/IMG_4157.jpg"> Pic2</a>)</li>
+							<li><a href="http://www.github.com/">github</a> - A very useful tool for software developer. You can find the code of my Master thesis <a href="https://github.com/ManuelMBaumann/MasterThesis">here</a>.</li>
+							<li><a href="https://www.dropbox.com/sh/es10isbpepmb5ry/n7LBmb1jaJ">homepage</a> - html code of this homepage for further use and distribution.</li>
+							
+						</ul>
+					</section>
+					<section id="ski">
+					<h2>Skiing</h2>
+					<a href="http://www.skilehrerverband.de/"<p><img src="img/DSLV-LOGO.gif"  alt="DSLV" class="img-polaroid maxw-200" align="right"></p></a>
+					Besides math, skiing is the best thing on earth. Since I was 3 years old, my parents went skiing with me in a small town called <a href="http://www.alpedisiusi.info/en/winter-active/skiing.html">Kastelruth</a>. It must have been around that time, that I discovered my passion for skiing and its relaxing environment.
+					
+					Over the years, I imroved my skiing skills and it happened by change that I found out about the <a href="http://www.zeh.hu-berlin.de/angebot.html">winter sport courses</a> offered by the Humboldt University of Berlin. After completing some of their courses, I had the opportunity to become a skiing teacher at the <a href="http://www.skilehrerverband.de/">DSLV</a> (Deutscher Skilehrerverband) in 2012. Since then, every winter, me and my girlfriend supervise some of the skiing courses of the HU Berlin student sports association. Those 1-week skiing trips are designed for students of the three Berlin universities, but also international students are welcome to join. We are usually a group of 40-50 students and 4-6 instructors for all levels from beginners to advanced skiers. Feel welcome to join us in the next winter! 
+
+					</section>
+					<section id="declaration">
+					<h2>Declaration</h2>
+					This page was built with basic html-hacking using the very nice template of TU Berlin mathematician <a href ="http://www.janheiland.com"> Jan Heiland</a>. Last updated: July 2013
+					</section> 
+				</div> 
+				<div class="span3 hidden-tablet hidden-phone">
+				<a class="twitter-timeline"  href="https://twitter.com/FESonline"  data-widget-id="353095282784890880">Tweets von @FESonline</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+					<!--<h2>Daily News</h2>
+					<div class="tweet-outer">
+						<h5>The <a href ="http://www.fes.de/">Friedrich Ebert Foundation</a> not only supports students from a working-class background with scholarships, but is also active in development politics and democracy.</h5>
+						<div class="tweet"></div>-->
+					</div>
+				</div> 
+			</div> 
+        </div>
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="starter-template-Dateien/bootstrap-transition.js"></script>
+        <script src="starter-template-Dateien/bootstrap-alert.js"></script>
+        <script src="starter-template-Dateien/bootstrap-modal.js"></script>
+        <script src="starter-template-Dateien/bootstrap-dropdown.js"></script>
+        <script src="starter-template-Dateien/bootstrap-scrollspy.js"></script>
+        <script src="starter-template-Dateien/bootstrap-tab.js"></script>
+        <script src="starter-template-Dateien/bootstrap-tooltip.js"></script>
+        <script src="starter-template-Dateien/bootstrap-popover.js"></script>
+        <script src="starter-template-Dateien/bootstrap-button.js"></script>
+        <script src="starter-template-Dateien/bootstrap-collapse.js"></script>
+        <script src="starter-template-Dateien/bootstrap-carousel.js"></script>
+        <script src="starter-template-Dateien/bootstrap-typeahead.js"></script>
+
+        </body></html>
