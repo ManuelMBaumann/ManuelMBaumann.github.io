@@ -60,7 +60,7 @@
     <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/> 
   </head>
 
-  <body data-spy="scroll" data-target="#sidenav" onLoad="window.scroll(0, 150)">
+  <body data-spy="scroll" data-target="#sidenav" onLoad="window.scroll(0, 200)">
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -104,7 +104,7 @@
 					<h5>University Supervisor: Dr. ir. M.B. Van Gijzen</h5> 
 					<h5>SHELL Monitor: Dr. Ren&eacute;-&Eacute;douard Plessix</h5> 
 					
-					<p align="justify">Fast and accurate simulation of wave propagation through an elastic medium is a key component in geophysical exploration. By assuming a time-harmonic wave field and after discretizing the governing equation, the wave can be computed by solving a large complex and indefinite system of linear equations. This time-harmonic elastic wave equation has the same structure as the Helmholtz equation for acoustic wave propagation in the sense that both can be written as $(K + if C -f^2 M)\mathbf{x} = \mathbf{b}$. Here $f$ is the (angular) frequency, $i = \sqrt{-1}$ is the imaginary unit number, $K$, $C$ and $M$ are symmetric and positive definite matrices and the right-hand side vector $\mathbf{b}$ corresponds to a source term. Such systems typically have to be solved at several frequencies and for dozens of right-hand side vectors $\mathbf{b}$. The grid size must be small enough to describe a wave, which results in very large systems for high frequencies (many millions of linear equations) that are hard to solve due to the indefiniteness of the system matrix. The time-harmonic elastic wave equation is even more difficult to solve than the Helmholtz equation since the number of unknowns per grid points is three instead of one, resulting in an even larger system, with a system matric that is more dense (more non-zeros per row) and more ill-conditioned. My project aims to develop an efficient iterative mehtod for solving the time-harmonic elastic wave equation at multiple frequencies and for multiple source terms. In order to develop this method, algorithms that have been successfully applied for the Helmholtz equation will be generalized for the time-harmonic elastic wave equation. We aim for (nearly) frequency and grid independent convergence so that the solver can be successfully applied to problems at the relevant frequencies for geophysical applications.</p>
+					<p align="justify">Fast and accurate simulation of wave propagation through an elastic medium is a key component in geophysical exploration. By assuming a time-harmonic wave field and after discretizing the governing equation, the wave can be computed by solving a large complex and indefinite system of linear equations. This time-harmonic elastic wave equation has the same structure as the Helmholtz equation for acoustic wave propagation in the sense that both can be written as $(K + if C -f^2 M)\mathbf{x} = \mathbf{b}$. Here $f$ is the (angular) frequency, $i = \sqrt{-1}$ is the imaginary unit number, $K$, $C$ and $M$ are symmetric and positive definite matrices and the right-hand side vector $\mathbf{b}$ corresponds to a source term. Such systems typically have to be solved at several frequencies and for dozens of right-hand side vectors $\mathbf{b}$. The grid size must be small enough to describe a wave, which results in very large systems for high frequencies (many millions of linear equations) that are hard to solve due to the indefiniteness of the system matrix. The time-harmonic elastic wave equation is even more difficult to solve than the Helmholtz equation since the number of unknowns per grid points is three instead of one, resulting in an even larger system, with a system matrix that is more dense (more non-zeros per row) and more ill-conditioned. My project aims to develop an efficient iterative mehtod for solving the time-harmonic elastic wave equation at multiple frequencies and for multiple source terms. In order to develop this method, algorithms that have been successfully applied for the Helmholtz equation will be generalized for the time-harmonic elastic wave equation. We aim for (nearly) frequency and grid independent convergence so that the solver can be successfully applied to problems at the relevant frequencies for geophysical applications.</p>
 					
 					</section>
 
@@ -119,16 +119,26 @@
 					<section id="OwnPub">
 					<h3>Publications</h3>
 					<h4>Technical reports</h4>
-					M. Baumann, M.B. van Gijzen. <a href = "http://www.ewi.tudelft.nl/en/the-faculty/departments/applied-mathematics/reports/"> Nested Krylov methods for shifted linear systems</a>. DIAM technical report 14-01, TU Delft, 2014. Code freely available on <a href = "https://bitbucket.org/ManuelMBaumann/nestedkrylov">Bitbucket</a>.
+					<ul>
+                                        <p></p>
+                                        <li>M. Baumann, M. B. van Gijzen. <a href = "http://www.ewi.tudelft.nl/en/the-faculty/departments/applied-mathematics/reports/"> Nested Krylov methods for shifted linear systems</a>. DIAM technical report 14-01, TU Delft, 2014. Code freely available on <a href = "https://bitbucket.org/ManuelMBaumann/nestedkrylov">Bitbucket</a>.</li>
+					<p></p>
+                                        </ul>
 					<h4>Conference proceedings</h4>
-					Poster for the thirty-eighth <a href = "http://wsc.project.cwi.nl/woudschoten/2013/conferentieE.php">Woudschoten Conference</a> on Oct. 2-4, 2013,  in Zeist, The Netherlands (<a href = "projects/posterWSC.pdf">poster</a>)
+					<ul>
+					<p></p>	
+					
+					<li>Poster for the thirty-ninth <a href = "http://wsc.project.cwi.nl/woudschoten/2014/conferentieE.php">Woudschoten Conference</a> on Oct. 8-10, 2014,  in Zeist, The Netherlands (<a href = "projects/posterWSC14.pdf">poster</a>, <a href = "projects/second_price_woudschoten39.jpg">my_prize</a>)</li>
+					<li>Poster for the thirty-eighth <a href = "http://wsc.project.cwi.nl/woudschoten/2013/conferentieE.php">Woudschoten Conference</a> on Oct. 2-4, 2013,  in Zeist, The Netherlands (<a href = "projects/posterWSC.pdf">poster</a>)</li>
+					<p></p>
+                                        </ul> 
 					<h4>Selected Talks</h4>
 					<ul>
 					<p></p>
 					<li>25.09.2014: Talk at the mini-workshop on shifted linear systems at the <a href="http://www-ai.math.uni-wuppertal.de/~frommer/">University of Wuppertal</a> (<a href = "projects/Wuppertal_talk_Manuel.pdf">slides</a>, <a href = "projects/2layers_absU.avi">movie</a>)</li>
 					<li>03.09.2014: Talk at the <a href = "http://www.ima.org.uk/conferences/conferences_calendar/4th_ima_conference_on_numerical_linear_algebra_and_optimisation.cfm.html">4th IMA Conference on Numerical Linear Algebra and Optimisation</a> (<a href = "projects/Baumann_Gijzen_IMA14.pdf">abstract</a>, <a href = "projects/imaNAOpt14.pdf">slides</a>)</li> 
 					<p></p>
-					<ul>
+					</ul>
 					<h4></h4>
 					</section> 
 				</div> 
