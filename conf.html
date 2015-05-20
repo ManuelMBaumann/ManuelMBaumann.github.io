@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Personal Homepage of Manuel Baumann</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="starter-template-Dateien/bootstrap.css" rel="stylesheet">
+		<link href="starter-template-Dateien/sidebar.css" rel="stylesheet">
+		<link href="starter-template-Dateien/bootstrap-responsive.css" rel="stylesheet">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Le fav and touch icons -->
+		<!--    <link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/ico/favicon.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="http://twitter.github.com/bootstrap/assets/ico/apple-touch-icon-57-precomposed.png">-->
+		<script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+		<script language="javascript" src="js/jquery.tweet.js" type="text/javascript"></script> 
+		<script type='text/javascript'>
+			jQuery(function($){
+					$(".tweet").tweet({
+username: "ManuelMBaumann",
+join_text: "auto",
+avatar_size: 32,
+count: 5,
+auto_join_text_default: " ",
+auto_join_text_ed: " ",
+auto_join_text_ing: " ",
+auto_join_text_reply: " ",
+auto_join_text_url: " ",
+loading_text: "loading tweets..."
+});
+					});
+</script>
+<script type="text/javascript">
+	$(window).scroll(function(){
+			var saraj = document.getElementById('schottland').clientHeight; 
+			//console.log(saraj)
+			$("#theFixed").css("top",Math.max(0,saraj-$(this).scrollTop()));
+			});
+</script>
+<script type="text/javascript">
+	$(window).ready(function() {
+			window.scrollBy(0,1); 
+			window.scrollBy(0,-1); 
+			});
+</script>
+<link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/> 
+<link href="css/style.css" media="all" rel="stylesheet" type="text/css"/> 
+	</head>
+
+	<body data-spy="scroll" data-target="#sidenav" onLoad="window.scroll(0, 200)">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<span class="brand">Manuel Baumann</span>
+					<div style="height: 0px;" class="nav-collapse collapse">
+						<ul class="nav">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="phd.html">PhD project</a></li>
+							<li class="active"><a href="conf.html">Conferences</a></li>
+							<li><a href="student.html">Studies</a></li>
+							<li><a href="things.html">Misc</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+		<div class="row-fluid">
+			<div class="span12 hidden-phone">
+				<img id="schottland" src="img/background1.jpg" width=100% border="0">
+			</div> 
+			<!-- Docs nav
+			================================================== -->
+			<div class="row-fluid">
+				<div class="span2">
+					<div id="sidenav" class="bs-docs-sidebar hidden-tablet hidden-phone">
+						<ul id="theFixed" style="position: fixed;" class="nav nav-list bs-docs-sidenav">
+							<li class="active"><a href="#position"><i class="icon-chevron-right"></i>2015</a></li>
+							<li><a href="#2014"><i class="icon-chevron-right"></i>2014</a></li>
+							<li><a href="#2013"><i class="icon-chevron-right"></i>2013</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="span7">
+					<section id="position">
+					<h2>Conferences</h2>
+					<div class="row-fluid">
+						<div class="span8">
+						Meet me at one of the following conferences and workshops.
+							<h2>2015</h2> 
+							<ul>
+							<p></p>
+							<li>February 2: <a href = "http://sscdelft.github.io/activities/2015/02/02/krylov-day.html">SIAM Student Krylov Day</a>, TU Delft, The Netherlands</li>
+							<li>May 6-9:  <a href = "http://www3.math.tu-berlin.de/multiphysics/VM60//">Numerical Algebra, Matrix Theory, Differential-Algebraic Equations, and Control Theory</a>, TU Berlin, Berlin, Germany</li>
+							<li>May 18:  <a href = "http://ta.twi.tudelft.nl/nw/users/domenico/ten_years_shifted_laplacians/index.html">Recent Developments in Fast Helmholtz Solvers</a>, TU Delft, The Netherlands</li>
+							<li>June 17-19:  <a href = "http://www.win.tue.nl/precon2015/index.html">International Conference On Preconditioning Techniques For Scientific And Industrial Applications</a>, TU Eindhoven, The Netherlands</li>
+							<li>October 7-9:  <a href = "https://wsc.project.cwi.nl/woudschoten/2015/conferentieE.php">The fortieth Woudschoten Conference</a>, Woudschoten Conference Centre, Zeist, The Netherlands</li>
+							<li>October 26-30:  <a href = "http://www.siam.org/meetings/la15/">SIAM Conference on Applied Linear Algebra</a>, Hyatt Regency Atlanta, Atlanta, Georgia, USA</li>
+							<p></p>
+							</ul>
+						</div> 
+						<div class="span4">
+							<a href="img/IMG_0332_crop.jpg"><img src="img/IMG_0332_crop.jpg" class="img-polaroid maxw-280"></a>
+						</div> 
+					</div> 
+					</section>
+					<section id="2014">
+					<h2>2014</h2>
+						<ul>
+							<p></p>
+							<li>April 16-17: <a href = "http://nmc.wiskgenoot.nl/">50th Nederlands Mathematisch Congres (Dutch Mathematical Congress)</a>, Delft, The Netherlands</li>
+							<li>May 23: <a href = "https://wsc.project.cwi.nl/spring/2014/meetingE.php">Spring meeting Werkgemeenschap Scientific Computing (WSC)</a>, Amsterdam Science Park, The Netherlands</li>
+							<li>September 3-5: <a href = "http://www.ima.org.uk/conferences/conferences_calendar/4th_ima_conference_on_numerical_linear_algebra_and_optimisation.cfm.html">4th IMA Conference on Numerical Linear Algebra and Optimisation</a>, University of Birmingham, UK</li>
+							<li>September 25: <a href="http://www-ai.math.uni-wuppertal.de/~frommer/">Shifted systems workshop at University of Wuppertal</a>, Wuppertal, Germany</li>
+							<li>October 8-10: <a href = "http://wsc.project.cwi.nl/woudschoten/2014/conferentieE.php">The thirty-ninth Woudschoten Conference</a>, Woudschoten Conference Centre, Zeist, The Netherlands</li>
+							<p></p>
+							</ul>
+					</section>
+					<section id="2013">
+					<h2><2013</h2>
+						<ul>
+							<p></p>
+							<li>October 2-4, 2013: <a href = "http://wsc.project.cwi.nl/woudschoten/2013/conferentieE.php"> The thirty-eighth Woudschoten Conference</a>, Woudschoten Conference Centre, Zeist, The Netherlands</li>
+							<li>November 25, 2011: <a href = "http://www3.math.tu-berlin.de/dies/2011/index.html"> Dies Mathematicus TU Berlin</a>, Berlin, Germany</li>
+							<li>September 15-17, 2010: <a href="http://www.mpi-magdeburg.mpg.de/events/454/1142356">4th International Conference on Population Balance Modelling</a>, Max-Planck-Institut fuer Dynamik komplexer technischer Systeme Magdeburg, Magdeburg, Germany</li>
+							<p></p>
+							</ul>
+					</section> 
+				
+				</div> 
+				<div class="span3 hidden-tablet hidden-phone">
+				<a class="twitter-timeline"  href="https://twitter.com/SIAMconnect"  data-widget-id="600962188782772224">Tweets von @SIAMconnect</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+				</div>
+				
+				
+				<!--<div class="span3 hidden-tablet hidden-phone">
+					<h2>News</h2>
+					<div class="tweet-outer">
+						<h4>Follow me on Twitter!</h4>
+						<h5><a href="https://twitter.com/ManuelMBaumann">@ManuelMBaumann</a></h5>
+						<div class="tweet"></div>
+					</div>
+				</div> -->
+			</div> 
+		</div>
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="starter-template-Dateien/bootstrap-transition.js"></script>
+		<script src="starter-template-Dateien/bootstrap-alert.js"></script>
+		<script src="starter-template-Dateien/bootstrap-modal.js"></script>
+		<script src="starter-template-Dateien/bootstrap-dropdown.js"></script>
+		<script src="starter-template-Dateien/bootstrap-scrollspy.js"></script>
+		<script src="starter-template-Dateien/bootstrap-tab.js"></script>
+		<script src="starter-template-Dateien/bootstrap-tooltip.js"></script>
+		<script src="starter-template-Dateien/bootstrap-popover.js"></script>
+		<script src="starter-template-Dateien/bootstrap-button.js"></script>
+		<script src="starter-template-Dateien/bootstrap-collapse.js"></script>
+		<script src="starter-template-Dateien/bootstrap-carousel.js"></script>
+		<script src="starter-template-Dateien/bootstrap-typeahead.js"></script>
+
+</body></html>
