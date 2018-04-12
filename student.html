@@ -9,6 +9,11 @@
     <link href="starter-template-Dateien/bootstrap.css" rel="stylesheet">
     <link href="starter-template-Dateien/sidebar.css" rel="stylesheet">
     <link href="starter-template-Dateien/bootstrap-responsive.css" rel="stylesheet">
+    
+        <script type="text/javascript" src="http://latex.codecogs.com/latexit.js"></script>
+	<script type="text/javascript">
+	LatexIT.add('p',true);
+	</script>
 
     <script language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script language="javascript" src="js/jquery.tweet.js" type="text/javascript"></script> 
@@ -44,6 +49,16 @@
     <link href="css/jquery.tweet.css" media="all" rel="stylesheet" type="text/css"/> 
     <link href="css/style.css" media="all" rel="stylesheet" type="text/css"/> 
   </head>
+  
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
 
   <body data-spy="scroll" data-target="#sidenav" onLoad="window.scroll(0, 200)">
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -85,17 +100,119 @@
         </div>
         <div class="span7">
         <section id="fvmforconvdiff">
-						<h2>2nd year of Master studies at TU Delft (2012-2013)</h2>
+        
+        
+
+                                <h2>Fast Iterative Solution of the Time-harmonic Elastic Wave Equation at Multiple Frequencies</h2>
+                                
+					 					<!-- <a href="http://www.ewi.tudelft.nl/en/the-faculty/professors/applied-mathematics/"<p><img src="img/Logo_TUDelft.jpg" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a>-->
+        
+					 
+					<h5>Supervisor at TU Delft: Dr. ir. M. B. van Gijzen</h5> 
+					<h5>SHELL Monitor: Dr. Ren&eacute;-&Eacute;douard Plessix</h5> 
+					
+       
+					
+					<p align="justify">Fast and accurate simulation of wave propagation through an elastic medium is a key component in geophysical exploration. By assuming a time-harmonic wave field and after discretizing the governing equation, the wave can be computed by solving a large complex and indefinite system of linear equations. This time-harmonic elastic wave equation has the same structure as the Helmholtz equation for acoustic wave propagation in the sense that both can be written as $(K + if C -f^2 M)\mathbf{x} = \mathbf{b}$. Here $f$ is the (angular) frequency, $i = \sqrt{-1}$ is the imaginary unit number, $K$, $C$ and $M$ are symmetric and positive definite matrices and the right-hand side vector $\mathbf{b}$ corresponds to a source term. Such systems typically have to be solved at several frequencies and for dozens of right-hand side vectors $\mathbf{b}$. The grid size must be small enough to describe a wave, which results in very large systems for high frequencies (many millions of linear equations) that are hard to solve due to the indefiniteness of the system matrix. The time-harmonic elastic wave equation is even more difficult to solve than the Helmholtz equation since the number of unknowns per grid points is three instead of one, resulting in an even larger system, with a system matrix that is more dense (more non-zeros per row) and more ill-conditioned. My project aims to develop an efficient iterative mehtod for solving the time-harmonic elastic wave equation at multiple frequencies and for multiple source terms. In order to develop this method, algorithms that have been successfully applied for the Helmholtz equation will be generalized for the time-harmonic elastic wave equation. We aim for (nearly) frequency and grid independent convergence so that the solver can be successfully applied to problems at the relevant frequencies for geophysical applications.</p>
+					
+					</section>
+
+					<section id="OwnPub">
+
+                    <h4> Dissertation </h4>
+                    <ul>
+                    <p>
+                    <li>M. Baumann (2018). <a href ="projects/mmb-dissertation.pdf">Fast Iterative Solution of the Time-Harmonic Elastic Wave Equation at Multiple Frequencies</a>. <i>PhD Thesis, Delft  University of Technology</i>. Also available online from the TU Delft <a href="https://repository.tudelft.nl/islandora/object/uuid:b1024bc5-46ad-450e-a3d3-090a166a67a7?collection=research">repository</a> and as <a href="http://www.digitaalproefschrift.nl/ebooks/manuel_baumann/mobile/index.html#p=1">eBook</a>.</li>
+                    </p>
+                    </ul>
+        
+        <br><hr/>
+        
+       <!-- <a href="http://www.ewi.tudelft.nl/en/the-faculty/professors/applied-mathematics/"<p><img src="img/Logo_TUDelft.jpg" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a>
+        -->
+						<h2>Studies and early projects (2008-2013)</h2>
 						<a href="http://www.ewi.tudelft.nl/en/the-faculty/professors/applied-mathematics/"<p><img src="img/Logo_TUDelft.jpg" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a>
-						<p>In <a href="http://www.kth.se/en/studies/programmes/master/em/cosse">COSSE</a>, all students change university after one year of studies. My second university was the Technical University of Delft, the Netherlands. Here, I had one semester of courses and I wrote my Master thesis which has been supervised by <a href="http://ta.twi.tudelft.nl/nw/users/gijzen/">Martin van Gijzen</a> and <a href="http://ta.twi.tudelft.nl/wagm/users/rojas/">Marielba Rojas</a>. </p>
+						
+						
+						<h4> MSc Thesis </h4>
 						
 						<ul>
+                                                <p>
+                                                <li>M. Baumann (2013). <a href ="http://repository.tudelft.nl/islandora/object/uuid%3A242e3440-535a-4143-8036-5af5495d60bd?collection=education">Nonlinear Model Order Reduction using POD/DEIM for Optimal Control of Burgers' Equation</a>. <i>MSc Thesis, Delft  University of Technology</i>. (<a href ="projects/Master/abstract.pdf">abstract</a>, <a href ="projects/Master/MSc_ManuelBaumann.pdf">report</a>, <a href ="projects/Master/presentation.pdf">slides</a>)</li>
+                                                </p>
+                                                Scientific supervision: <a href="http://ta.twi.tudelft.nl/nw/users/gijzen/">Martin van Gijzen</a> and <a href="http://ta.twi.tudelft.nl/wagm/users/rojas/">Marielba Rojas</a>
+                                                </ul>
+                                                <br>
+                                                
+<!--                                                 <a href="http://www.csc.kth.se/na/"<p><img src="img/kth_new.png" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a> -->
+                                                
+
+                                                      
+                                                <h4> BSc Theses </h4>
+                                                
+                                                <a href="http://www.math.tu-berlin.de/menue/home/parameter/en/"<p><img src="img/TUBerlin_Logo_rot.png" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a>
+                                                
+                                                <ul>
+                                                <p>
+                                                <li>M. Baumann (2011). Modelling and Simulation of Dispersions in Turbulent Flows. <i>BSc Thesis, Technical University of Berlin</i>. (<a href="projects/Mathe_BA/abstract.pdf">abstract</a>, <a href="projects/Mathe_BA/matheba.pdf">report</a>, <a href="projects/Mathe_BA/diesMathMA.pdf">slides</a>)</li>
+                                                </p>
+                                                Scientific supervision: <a href="http://www.math.tu-berlin.de/fachgebiete_ag_modnumdiff/fg_numerische_mathematik/v-menue/mitarbeiter/volker_mehrmann/home//">Volker Mehrmann</a> and <a href="http://www.janheiland.de">Jan Heiland</a>
+                                                </ul>
+<!--                                                 <br> -->
+                                                
+                                                <ul>
+                                                <p>
+                                                <li>M. Baumann and P. Buran (2011). Numerical Solution of the Vorticity Transport Equation on Nvidia GPUs. <i>BSc Thesis, Technical University of Berlin</i>. (<a href="projects/PI_BA/abstractPI.pdf">abstract</a>, <a href="projects/PI_BA/piBA.pdf">report</a>, <a href="projects/PI_BA/slides_seminar.pdf">slides</a>)</li>
+                                                </p>
+                                                Scientific supervision: <a href="http://page.math.tu-berlin.de/~baerwolf/">Günter Bärwolff</a>
+                                                </ul>
+                                                <br>
+
+<h4> Others </h4>
+                                            <a href="http://www.csc.kth.se/na/"<p><img src="img/kth_new.png" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a>                                
+                                                <ul>
+                                                <p>
+                                                <li>During my Bachelor studies at TU Berlin, I was working as a student research assistant under the supervision of Jan Heiland within the working group for mathematical modelling. In 2010, we participated in the <a href="http://www.mpi-magdeburg.mpg.de/pbm2010">4th International Conference on Population Balance Modelling</a> in Berlin. (<a href ="projects/HiWi/2010_Heiland_Simulation and Control.pdf">paper</a>, <a href ="projects/HiWi/posterPBM2010Heiland.pdf">poster</a>)</li>
+						</p>
+						</ul>
+						
+						
+                                                <ul>
+                                                <p>
+                                                <li>Project work on Balanced Truncation with M. Ambrozic and C. Echeverria (<a href ="projects/Projekte/SysControl_paper.pdf">report</a>, <a href ="projects/Projekte/SysControl_slides.pdf">slides</a>) </li>
+						</p>
+						</ul>
+						
+						
+						
+                                                <ul>
+                                                <p>
+                                                <li>A <a href ="projects/Projekte/jesper_poster.pdf">poster</a> on SPH I did with A. Vajaykumar and S. Milovanovic. Please also see the pictures of the poster presentation (<a href ="img/jesper1.jpg">Pic1</a>, <a href ="img/jesper2.jpg">Pic2</a>)</li>
+						</p>
+						</ul>
+						
+						<ul>
+                                                <p>
+                                                <li><a href ="projects/Projekte/MPI2_slides.pdf">Parallel implementation of the CG algorithm</a>, with D. Staubach. </li>
+						</p>
+						</ul>
+						
+						<ul>
+                                                <p>
+                                                <li><a href ="projects/Projekte/SDE_slides.pdf">Chaotic dynamical systems</a>, a project in the course Stochastic Differential Equations, with G. Malenova. </li>
+						</p>
+						</ul>
+
+                                                 
+						<!--<p>In <a href="http://www.kth.se/en/studies/programmes/master/em/cosse">COSSE</a>, all students change university after one year of studies. My second university was the Technical University of Delft, the Netherlands. Here, I had one semester of courses and I wrote my Master thesis which has been supervised by <a href="http://ta.twi.tudelft.nl/nw/users/gijzen/">Martin van Gijzen</a> and <a href="http://ta.twi.tudelft.nl/wagm/users/rojas/">Marielba Rojas</a>. </p>-->
+						
+						<!--<ul>
 							<p></p>
 							<li>Master thesis on "Nonlinear Model Order Reduction using POD/DEIM for Optimal Control of Burgers' Equation", supervised by <a href="http://ta.twi.tudelft.nl/nw/users/gijzen/">Martin van Gijzen</a> and <a href="http://ta.twi.tudelft.nl/wagm/users/rojas/">Marielba Rojas</a> (<a href ="projects/Master/abstract.pdf">abstract</a>, <a href ="projects/Master/MSc_ManuelBaumann.pdf">report</a>, <a href ="projects/Master/presentation.pdf">slides</a>)</li>
 							<li>Project work on Balanced Truncation with M. Ambrozic and C. Echeverria (<a href ="projects/Projekte/SysControl_paper.pdf">report</a>, <a href ="projects/Projekte/SysControl_slides.pdf">slides</a>)</li>
 							<p></p>
-						</ul>
-						</section>
+						</ul>-->
+						<!--</section>
 						<section id="bamatheses">
 				<h2>1st year of Master studies at KTH Stockholm (2011-2012)</h2>
 				<a href="http://www.csc.kth.se/na/"<p><img src="img/kth_new.png" width="200" height="150" class="img-polaroid maxw-200" align="right"></p></a>
@@ -127,7 +244,7 @@
 						<p>
 						Unfortunatelly, most of the above files are in German language.
 						</p>
-						</section>
+						</section>-->
 			
 
 						
