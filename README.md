@@ -1,3 +1,3 @@
-html code of my [homepage] at TU Delft.
+html code of my [homepage] at MPI Magdeburg.
 
-[homepage]: http://ta.twi.tudelft.nl/nw/users/mmbaumann/
+[homepage]: http://www.manuelbaumann.de
