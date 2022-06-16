@@ -1,3 +1,3 @@
-html code of my [homepage] at MPI Magdeburg.
+html code of my personal [homepage].
 
 [homepage]: http://www.manuelbaumann.de
